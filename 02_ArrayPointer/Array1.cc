@@ -4,17 +4,18 @@
 
 int main()
 {
-    //char first_name[] = {'h', 'a', '\0'};
-    char kogo[] = {'h', 'T', 'X'};
-    char kogo3[] = {'P', '\0', 'K'};
+    char array1[] = "Hello World!";
+    int counter = 0U;
+    while (true)
+    {
+        if (array1[counter] == '\0')
+        {
+            break;
+        }
+        counter += 1;
+    }
 
-    char freise[] = "Haxnfressn";
-    char freise2[] = "nudln\0mit haxn";
-
-    std::cout << "  ********* " << kogo << std::endl;
-    std::cout << "  kogo3 " << kogo3 << std::endl;
-    std::cout << "  freise " << freise << std::endl;
-    std::cout << "  freise2 " << freise2 << std::endl;
+    std::cout << "length= " << counter;
 
     return 0;
 }
